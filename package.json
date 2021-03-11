@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/alisidaniel/private-blockchain/issues"
   },
-  "homepage": "https://github.com/alisidaniel/private-blockchain#readme"
+  "homepage": "https://github.com/alisidaniel/private-blockchain#readme",
+  "dependencies": {
+    "crypto-js": "^4.0.0"
+  }
 }
