@@ -21,6 +21,13 @@ class Blockchain {
   }
 
   addBlock(newBlock) {
+    // reference block height 
+    newBlock.height = this.chain.length;
+
+    //timestamp
+    newBlock.time = new Date().getTime().toString().slice(0, -3);
+
+    // reference to previous block hash
     if (this.chain.length > 0) {
       newBlock.previousBlockHash = this.chain[this.chain.length - 1].hash;
     }
